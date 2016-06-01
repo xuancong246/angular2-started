@@ -4,7 +4,6 @@ import { ProductListComponent } from './products/product-list.component';
 @Component({
     selector: 'pm-app',
     template: `
-        <h1>Product List</h1>
         <pm-products></pm-products>
     `,
     directives: [ ProductListComponent ]
