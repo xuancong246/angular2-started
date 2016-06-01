@@ -5,6 +5,7 @@ import { ProductListComponent } from './products/product-list.component';
     selector: 'pm-app',
     template: `
         <pm-products></pm-products>
+        <table><thead><th>No change color</th></thead><tbody><tr><td>No change size</td></tr></tbody></table>
     `,
     directives: [ ProductListComponent ]
 })
