@@ -1,6 +1,6 @@
 <div class='panel panel-primary'>
     <div class='panel-heading'>
-        Product List
+        {{ pageTitle + ' with Angular2 at ' + tempDate }}
     </div>
     <div class='panel-body'>
         <div class='table-responsive'>
@@ -8,27 +8,22 @@
                 <thead>
                     <tr>
                         <th>
-                            Button here
+                            <button class="btn btn-primary" (click)="toggleEnableCheckboxes()">
+                                {{ enableCheckboxes ? "Disable" : "Enable" }} check boxes</button>
                         </th>
-                        <th>Product</th>
+                        <th>Product Name</th>
                         <th>Code</th>
-                        <th>Available</th>
+                        <th>Available From</th>
                         <th>Price</th>
-                        <th>5 Star Rating</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            sample                            
-                        </td>
-                        <td>sample</td>
-                        <td>sample</td>
-                        <td>sample</td>
-                        <td>sample</td>
-                        <td>
-                            sample
-                        </td>
+                    <tr *ngFor="#product of products">
+                        <td><input type="checkbox" [disabled]="!enableCheckboxes" [checked]="product.selected" /></td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.code }}</td>
+                        <td>{{ product.publishDate }}</td>
+                        <td>{{ product.price }}</td>
                     </tr>
                 </tbody>
             </table>

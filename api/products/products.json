@@ -1,0 +1,30 @@
+[
+    {
+        "name": 'SonyXperiaM5',
+        "code": 'Az123bcd',
+        "publishDate": '12/05/2015',
+        "price": 430,
+        "selected": true
+    },
+    {
+        "name": 'MicrosoftLumia530',
+        "code": 'MiLumia134',
+        "publishDate": '10/11/2013',
+        "price": 280,
+        "selected": true
+    },
+    {
+        "name": 'Nokia1280',
+        "code": 'Nokia1280',
+        "publishDate": '01/11/2010',
+        "price": 80,
+        "selected": false
+    },
+    {
+        "name": 'iPhone6S',
+        "code": 'iPhone6S',
+        "publishDate": '10/01/2015',
+        "price": 890,
+        "selected": false
+    }
+];
